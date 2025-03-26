@@ -1,0 +1,19 @@
+{
+    "name": "fortnite-cli",
+    "version": "1.0.0",
+    "description": "CLI for Fortnite cosmetics",
+    "main": "cli.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Your Name",
+    "license": "MIT",
+    "dependencies": {
+      "axios": "^1.6.2",
+      "chalk": "^4.1.2",
+      "cli-table3": "^0.6.3",
+      "dotenv": "^16.3.1",
+      "inquirer": "^9.2.10",
+      "minimist": "^1.2.8"
+    }
+  }
