@@ -19,6 +19,10 @@ const dbDirectory = path.resolve(__dirname, "mock_database");
 const _read = async (collection) => {
   try {
     const fullPath = path.resolve(dbDirectory, `${collection}.json`);
+    if (!fs.existsSync(fullPath)) {
+      // If the file does not exist, return an empty array
+      return [];
+    }
     const data = await fs.promises.readFile(fullPath, "utf-8");
     return JSON.parse(data);
   } catch (error) {

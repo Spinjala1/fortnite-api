@@ -1,6 +1,6 @@
+import { searchFunctionality, historyFunctionality } from "./app.js"; // Import functions from app.js
 const yargs = require("yargs"); // Import yargs for building the CLI
 const { hideBin } = require("yargs/helpers"); // Helper to parse command-line arguments
-const { searchFunctionality, historyFunctionality } = require("./app.js"); // Import functions from app.js
 
 // Define the CLI commands using yargs
 // Parse the command-line arguments
